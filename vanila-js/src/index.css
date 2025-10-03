@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  color: red;
+}
+
+
+.card {
+  color: #0039d2;
+}
+
+/* a */
+h1 {
+  color: #26ff00;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  background-color: rgba(50%, 50%, 50%, 50%);
+  font-size: 10px;
+}
+
+
+.buchuk {
+  color: #8544fc;
+}
+
+
+#root {
+  color: #ffe800;
+}
+
+.list, .custom_list {
+  display: none;
+}
+
+.list.visible, .custom_list.visible {
+  display: block;
+}
+
+.list a:hover {
+  color: aqua;
+  font-size: 20px;
+}
+
+.card:not(div) {
+  display: none;
+}
+a:visited {
+  color: aqua;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  background: green;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + .checkbox {
+  background: #26ff00;
+}
+
+
+/* in-line   id    class   elem    */
+/*a    0       0      0       1     */
+/*b    1       0      0       0     */
