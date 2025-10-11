@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "echo \"start\"",
-    "test":"echo \"test\"",
+    "test": "echo \"test\"",
     "start:dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
