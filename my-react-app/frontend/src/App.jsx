@@ -17,7 +17,28 @@ const App = () => {
 
     const handleClick = useCallback(() => {
         setCount((count) => count + 1)
-    }, [count]);
+    }, []);
+
+    //// OK
+    // const Pimpa = () => count >= 5 ? null : (
+    //     <Button>
+    //         Pimpochka
+    //     </Button>
+    // );
+    //
+    // // OK
+    // const pimpa = count >= 5 ? null : (
+    //     <Button>
+    //         Pimpochka
+    //     </Button>
+    // );
+
+    // // Bad
+    // const Pimpa =  count >= 5 ? null : (
+    //     <Button>
+    //         Pimpochka
+    //     </Button>
+    // );
 
     return (
         <>
@@ -34,9 +55,17 @@ const App = () => {
                 <Button onClick={handleClick}>
                     count is {count}
                 </Button>
-                <Button>
-                    Pimpochka
-                </Button>
+                {/* {pimpa} */}
+                {count < 5 && (
+                    <Button>
+                        Pimpochka
+                    </Button>
+                )}
+                {count >= 5 && (
+                    <Button>
+                        Pimpochka 2
+                    </Button>
+                )}
                 <p>
                     Edit <code>src/App.jsx</code> and save to test HMR
                 </p>
