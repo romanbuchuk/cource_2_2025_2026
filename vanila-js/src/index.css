@@ -4,7 +4,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 18px;
   color: red;
 }
 
@@ -16,6 +16,10 @@ html {
 /* a */
 h1 {
   color: #26ff00;
+}
+
+h1.active {
+  color: #950000;
 }
 
 a {

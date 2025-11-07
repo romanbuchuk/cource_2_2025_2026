@@ -5,10 +5,9 @@ const AppRouter = () => {
     return (
         <Router>
             <Route path="/" element={<Layout/>}>
-                <Route path={}>
-
-                </Route>
             </Route>
         </Router>
     )
 }
+
+export default AppRouter;
