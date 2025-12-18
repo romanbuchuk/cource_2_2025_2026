@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 
 export const Button = ({ children, onClick }) => {
     const handleClick = () => {
-        console.log('------> click <-------');
         onClick?.();
     }
 
